@@ -1,0 +1,23 @@
+.num-amount{
+    display: grid;
+
+}
+
+.num-amount > span{
+    color: white;
+    background-color: #af7f66;
+}
+
+.num-amount > span:hover{
+    background-color: #242424;
+}
+
+.num-amount > span:first-child{
+    padding-top: 2px;
+    margin-bottom: 1px;
+}
+
+.num-amount > span:last-child{
+    margin-top: 1px;
+    padding-bottom: 2px;
+}

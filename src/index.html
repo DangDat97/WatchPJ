@@ -6,8 +6,32 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-  <app-root></app-root>
+  <app-main></app-main>
+  <script type="text/javascript">
+    var lat = 0;
+    var long = 0;
+
+    navigator.geolocation.getCurrentPosition(function (position){
+        lat  = position.coords.latitude;
+        long = position.coords.longitude;
+        initMap();
+    })
+
+    let map;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: lat, lng: long },
+            zoom: 17,
+        });
+    }
+
+    window.initMap = initMap;
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap&v=weekly"
+        defer
+></script>
 </body>
 </html>
