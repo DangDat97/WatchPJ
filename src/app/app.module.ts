@@ -8,6 +8,8 @@ import { ShopComponent } from './shop/shop.component';
 import { MainComponent } from './main/main.component';
 import {HttpClientModule} from '@angular/common/http';
 import { OurHistoryComponent } from './our-history/our-history.component';
+import { TeamComponent } from './team/team.component';
+import { AllPostsComponent } from './all-posts/all-posts.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { OurHistoryComponent } from './our-history/our-history.component';
     ShopComponent,
     MainComponent,
     OurHistoryComponent,
+    TeamComponent,
+    AllPostsComponent,
   ],
   imports: [
     BrowserModule,

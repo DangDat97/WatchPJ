@@ -107,6 +107,42 @@
     font-size: 22px;
 }
 
+.e5-our-history > div > div{
+    position: relative;
+}
+
 .text-bl{
     text-align: left;
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+    color: #fff;
+}
+
+.form-our-history{
+    text-align: left;
+    padding-right: 120px;
+}
+
+.form-our-history input{
+    margin-bottom: 16px;
+    padding: 8px;
+}
+
+.form-our-history .col:first-child{
+    padding-right: 16px;
+}
+.form-our-history textarea{
+    padding: 8px;
+}
+
+.e6-our-history{
+    padding-top: 80px;
+}
+
+.e6-our-history h1 {
+    font-family: "Libre Baskerville",sans-serif;
+    font-size: 30px;
+    color: #242424;
+    padding-bottom: 16px;
 }
