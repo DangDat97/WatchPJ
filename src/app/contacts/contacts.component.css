@@ -1,0 +1,35 @@
+.e1-contact{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+
+.e1-contact > div > div{
+  margin-top: 10px;
+  color: #afafaf;
+  font-size: 22px;
+}
+
+
+.e1-contact h1{
+  font-family: "Libre Baskerville",sans-serif;
+  font-size: 38px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.35em;
+  text-decoration: none;
+  text-transform: none;
+  color: aliceblue;
+}
+
+.e1-contact a{
+  color: #afafaf;
+}
+
+.e1-contact a:hover{
+  color: #fff;
+}

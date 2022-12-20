@@ -10,6 +10,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { OurHistoryComponent } from './our-history/our-history.component';
 import { TeamComponent } from './team/team.component';
 import { AllPostsComponent } from './all-posts/all-posts.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AllPostsComponent } from './all-posts/all-posts.component';
     OurHistoryComponent,
     TeamComponent,
     AllPostsComponent,
+    ContactsComponent,
   ],
   imports: [
     BrowserModule,
