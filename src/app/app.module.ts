@@ -6,11 +6,13 @@ import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { ShopComponent } from './shop/shop.component';
 import { MainComponent } from './main/main.component';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClientJsonpModule, HttpClientModule} from '@angular/common/http';
 import { OurHistoryComponent } from './our-history/our-history.component';
 import { TeamComponent } from './team/team.component';
 import { AllPostsComponent } from './all-posts/all-posts.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,10 @@ import { ContactsComponent } from './contacts/contacts.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    GoogleMapsModule,
+    HttpClientJsonpModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [MainComponent]

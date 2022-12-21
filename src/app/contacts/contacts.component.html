@@ -66,8 +66,11 @@
     </div>
   </div>
   <div class="container-fuild">
-    <div id="map" height="500px">
-
+    <div id="map" style="padding-top: 80px;">
+      <div *ngIf="apiLoaded | async">
+        <google-map height="500px"
+                    width="1903px"></google-map>
+      </div>
     </div>
   </div>
 </main>

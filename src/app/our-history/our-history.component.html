@@ -100,17 +100,23 @@
                                     <input type="text" class="form-control" placeholder="Last name">
                                 </div>
                                 <textarea class="col-12" name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                                <div class="col-12">
-                                    <input type="checkbox">
+                                <div class="col-12" style="display: flex;" >
+                                    <input type="checkbox" class="input-check">
                                     <p>I have read and agree to the Privacy Policy</p>
                                 </div>
-                                <button class="btn btn-secondary col-3">send message</button>
+                                <div>
+                                  <button class="btn btn-secondary">send message</button>
+                                </div>
                             </div>
                         </form>
                     </div>
                 </div>
                 <div class="col-6">
-                    <div id="map" style="height: 500px"></div>
+                    <div id="map" >
+                      <div *ngIf="apiLoaded | async">
+                        <google-map height="500px"
+                                    width="558px"></google-map>
+                      </div></div>
                 </div>
             </div>
         </div>

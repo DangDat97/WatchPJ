@@ -149,12 +149,20 @@ color: #af7f66;
 .header .nav .nav-column{
   float: none;
   display: flex;
-  width: 10em;
+  width: auto;
   height: auto;
   margin-left: -10px;
   padding: 20px 10px;
 
 }
+
+.header .nav .nav-column ul{
+  display: grid;
+
+}
+
+
+
 .nav .nav-column {
   background-color: #282828;
 }
@@ -724,7 +732,7 @@ color: #fff;
   text-align: left;
 }
 
-.element1-product-text h1{
+.element1-product-text h4{
   color: black;
   margin-right: 10px;
 }
@@ -823,7 +831,7 @@ color: #fff;
 
 .icon > p {
   display: inline;
-  width: 64px;
+  width: 84px;
   opacity: 1;
   margin: 0px 5px;
   text-transform: uppercase;

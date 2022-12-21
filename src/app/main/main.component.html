@@ -10,22 +10,19 @@
                     <div class="nav-column">
                         <ul>
                             <li><a routerLink="/our-history">our history</a></li>
-                            <li><a href="#">our mission</a></li>
-                            <li><a href="#">team of code</a></li>
+                            <li><a routerLink="/our-mission">our mission</a></li>
+                            <li><a href="/team">team of code</a></li>
                         </ul>
                     </div>
             </li>
-            <li><a href="#">blog <span class="material-symbols-outlined">expand_more</span></a>
+            <li><a href="#">shop <span class="material-symbols-outlined">expand_more</span></a>
                     <div class="nav-column">
                         <ul>
-                            <li><a href="#">gold watch</a></li>
-                            <li><a href="#">medium watch</a></li>
-                            <li><a href="#">women watch</a></li>
-                            <li><a href="#">man watch</a></li>
+                            <li *ngFor="let c of category"><a routerLink="/shop/{{c}}">{{c}}</a></li>
                         </ul>
                     </div>
             </li>
-            <li><a routerLink="/product">product</a></li>
+            <li><a routerLink="/blog">blog</a></li>
             <li><a href="#">features <span class="material-symbols-outlined">expand_more</span></a>
                 <div class="nav-column">
                     <ul>
@@ -43,7 +40,7 @@
     <div class="col">
       <div class="hright">
         <ul>
-          <li> <a href="#">contacts</a>   </li>
+          <li> <a routerLink="/contacts">contacts</a>   </li>
           <li> <a href="#"><span class="material-symbols-outlined">person</span>
               <span class="text-hright">sign in</span> </a>  </li>
           <li> <a href="#"><span class="material-symbols-outlined">local_mall</span>
@@ -71,28 +68,28 @@
                   <div class="col">
                       <h5>Links</h5>
                       <ul>
-                          <li> <a href="#">home</a></li>
-                          <li> <a href="#">blog</a></li>
-                          <li> <a href="#">shop</a></li>
-                          <li> <a href="#">service</a></li>
+                          <li> <a routerLink="/">home</a></li>
+                          <li> <a routerLink="/all-posts">blog</a></li>
+                          <li> <a routerLink="/shop">shop</a></li>
+                          <li> <a routerLink="/service">service</a></li>
                       </ul>
                   </div>
                   <div class="col">
                       <h5>info</h5>
                       <ul>
-                          <li> <a href="#">team</a></li>
-                          <li> <a href="#">our mission</a></li>
-                          <li> <a href="#">our history</a></li>
-                          <li> <a href="#">contact</a></li>
+                          <li> <a routerLink="/team">team</a></li>
+                          <li> <a routerLink="/our-mission">our mission</a></li>
+                          <li> <a routerLink="/our-history">our history</a></li>
+                          <li> <a routerLink="/contact">contact</a></li>
                       </ul>
                   </div>
                   <div class="col">
                       <h5>socials</h5>
                       <ul>
-                          <li> <a href="#">instagram</a></li>
-                          <li> <a href="#">pinterest</a></li>
-                          <li> <a href="#">facebook</a></li>
-                          <li> <a href="#">youtube</a></li>
+                          <li> <a routerLink="#">instagram</a></li>
+                          <li> <a routerLink="#">pinterest</a></li>
+                          <li> <a routerLink="#">facebook</a></li>
+                          <li> <a routerLink="#">youtube</a></li>
                       </ul>
                   </div>
               </div>
