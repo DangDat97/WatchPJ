@@ -13,7 +13,8 @@ export class ProductCategoryComponent {
   brand: any=[];
   cate: any=[];
   baseCate:string='';
-
+  nameCate:any=[];
+  locc:any=[];
   constructor(private route: ActivatedRoute ,private subjectService: SubjectService){
 
   }
@@ -22,6 +23,7 @@ export class ProductCategoryComponent {
     this.route.params.subscribe(params=>{
       this.baseCate=params['cate'];
       this.products=this.subjectService.getCategoryDetail(this.baseCate);
+      this.nameCate=this.subjectService.getNameCategory(this.baseCate);
     })
 
     this.brand=this.subjectService.getBrand();

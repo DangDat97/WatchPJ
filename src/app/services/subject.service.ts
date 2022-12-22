@@ -7,6 +7,7 @@ import { Injectable } from '@angular/core';
 export class SubjectService {
 dataRes: any=[];
 Detail: any=[];
+
 Data: any={
   "products": [
     {
@@ -131,12 +132,11 @@ Data: any={
 }
 
 
-getProducts(){
-  // for (let i=0; i< limit ; i++){
-  //     this.dataRes=this.dataRes.push(this.Data.products[i]);
-  // }
-  // return this.dataRes;
-  return this.Data.products;
+getProducts(limit:number){
+  for (let i=0; i < limit ; i++){
+    this.dataRes.push(this.Data.products[i]);
+  }
+  return this.dataRes;
 }
 
 getProductsDetail(id:number){
@@ -158,6 +158,15 @@ getCategory(){
 
 getBrand(){
   return this.Data.brand;
+}
+
+getNameCategory(cate:string){
+  for (let p of this.Data.category){
+    if(p.base==cate){
+      this.Detail.push(p);
+    }
+  }
+  return this.Detail;
 }
 
 }

@@ -31,42 +31,14 @@
   <section class="section main">
     <div class="container-fuild after-first">
         <ul>
-            <li class="col">
+            <li *ngFor="let p of products" class="col">
                 <div>
-                    <div class="image-product"><img src="./assets/images/product-1-1.png" alt="#"></div>
+                    <div class="image-product"><img src="./assets/images/{{p.images}}" alt="#"></div>
                     <div class="text-product">
-                        <h1>Fastrack Analog Golden Dial Men’s Watch</h1>
-                        <p><u class="pu">$450.00</u>   $430.00</p>
+                        <h1>{{p.title}}</h1>
+                        <p>${{p.price}}</p>
                         <div class="add-cart">
-                            <button>Buy now</button>
-                        </div>
-                    </div>
-
-                </div>
-            </li>
-            <li class="col">
-                <div>
-                    <div class="image-product"><img src="./assets/images/product-1-2.png" alt="#"></div>
-                    <div class="text-product">
-                        <h1>Gauna Red Lawson Hand Watch</h1>
-                        <p><u class="pu">$45.000</u>   $31.99</p>
-                        <div class="add-cart">
-                            <button>Buy now</button>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="col">
-                <div>
-                    <div class="image-product"><img src="./assets/images/product-1-3.png" alt="#"></div>
-                    <div class="text-product">
-                        <h1>Sonata Analog gold dial women's watch</h1>
-                        <p> $290.00</p>
-                        <div class="add-cart">
-                            <button>Buy now</button>
-                            <div>
-
-                            </div>
+                          <button>Buy now</button>
                         </div>
                     </div>
                 </div>

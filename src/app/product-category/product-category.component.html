@@ -2,10 +2,11 @@
   <div class="container-fuild">
     <div class="e1-shop">
       <div>
-        <h1>Shop</h1>
-        <div class="row">
-            <a routerLink="/">Home /</a>
-            <p>Shop</p>
+        <h1>{{nameCate[1].name}}</h1>
+        <div style="display:inline-flex">
+            <a class="mr-5" routerLink="/">Home /</a>
+            <a class="mr-5" routerLink="/shop">Shop /</a>
+            <p>{{nameCate[1].name}}</p>
         </div>
     </div>
     </div>
@@ -37,7 +38,7 @@
 
         </div>
         <div *ngFor="let p of products" class="post-1-shop">
-          <div class="row">
+          <div *ngIf="p.title!=null" class="row">
             <div class="col-3">
               <img src="./assets/images/{{p.images}}" alt="">
             </div>

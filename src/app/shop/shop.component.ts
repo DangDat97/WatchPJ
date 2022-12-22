@@ -15,7 +15,7 @@ export class ShopComponent {
   }
 
   ngOnInit(){
-    this.products=this.subjectService.getProducts();
+    this.products=this.subjectService.getProducts(this.limit);
     this.brand=this.subjectService.getBrand();
     this.cate=this.subjectService.getCategory();
   }

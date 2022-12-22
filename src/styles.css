@@ -333,9 +333,11 @@ color: #fff;
 .after-first > ul >li{
   width: 33.3333%;
   padding: 0px 32px 32px 0px;
-
 }
 
+.after-first > ul >li > div:hover{
+  transform: scale(0.97);
+}
 
 .after-first .col > div{
   float: flex;
@@ -507,6 +509,7 @@ color: #fff;
 
 /* element6 -------*/
 .element6 {
+  margin-bottom: 80px;
   margin-top: 30px;
 }
 
@@ -514,11 +517,10 @@ color: #fff;
 
 /* footer ------------- */
 .footer{
-  margin-top: 100px;
   background-color: #212121;
 }
 .footer-e1{
-  padding: 100px 92px;
+  padding: 80px 80px;
 
 }
 
@@ -650,12 +652,12 @@ color: #fff;
 }
 
 .footer-e2 > div{
-  padding: 15px 92px 28px 92px;
+  padding: 0px 92px 0px 92px;
   letter-spacing: 1px;
 }
 
 .footer-e2 > div >div{
-  padding: 40px 0px 22px;
+  padding: 22px 0px;
   border-top: solid 0.01px #9f9d9d47 ;
 }
 
@@ -985,6 +987,9 @@ color: #fff;
 }
 
 /* element4-product ------------------*/
+.element4-product{
+  padding-bottom: 80px;
+}
 
 .element4-product > h2{
   margin: 100px 0px;
@@ -1007,6 +1012,7 @@ color: #fff;
   background-color: #86868609;
 }
 
+.e1-team,
 .e1-contact,
 .e1-shop,
 .e1-our-history{
@@ -1021,4 +1027,8 @@ color: #fff;
   background-image: url("./assets/images/h4-copyright.webp");
   text-align: center;
   min-height: 342px;
+}
+
+.mr-5{
+  margin-right: 5px;
 }

@@ -14,6 +14,10 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { RouterModule } from '@angular/router';
 import { ProductCategoryComponent } from './product-category/product-category.component';
+import { OurMissionComponent } from './our-mission/our-mission.component';
+import { OurServicesComponent } from './our-services/our-services.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +30,10 @@ import { ProductCategoryComponent } from './product-category/product-category.co
     AllPostsComponent,
     ContactsComponent,
     ProductCategoryComponent,
+    OurMissionComponent,
+    OurServicesComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
