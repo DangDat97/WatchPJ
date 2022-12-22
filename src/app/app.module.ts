@@ -13,6 +13,7 @@ import { AllPostsComponent } from './all-posts/all-posts.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { RouterModule } from '@angular/router';
+import { ProductCategoryComponent } from './product-category/product-category.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { RouterModule } from '@angular/router';
     TeamComponent,
     AllPostsComponent,
     ContactsComponent,
+    ProductCategoryComponent,
   ],
   imports: [
     BrowserModule,

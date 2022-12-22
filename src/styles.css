@@ -743,8 +743,9 @@ color: #fff;
 }
 
 
-.line-through{
+.element1-product-text .line-through{
   text-decoration: line-through;
+  color: #868686;
 }
 .element1-product-text > div:first-child{
   font-size: 22px;

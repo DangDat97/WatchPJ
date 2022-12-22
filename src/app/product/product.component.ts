@@ -1,4 +1,6 @@
 import { Component } from "@angular/core";
+import { ActivatedRoute } from '@angular/router';
+import { SubjectService } from '../services/subject.service';
 
 @Component({
   selector: 'app-product',
@@ -7,6 +9,22 @@ import { Component } from "@angular/core";
 })
 
 export class ProductComponent{
+  product: any=[];
+  id: number=0;
+  constructor(private route: ActivatedRoute, private subjectService: SubjectService){
+
+  }
+
+
+  ngOnInit(){
+    this.textElement3(this.text);
+    this.route.params.subscribe(params=>{
+      this.id=params['id'];
+      this.product=this.subjectService.getProductsDetail(this.id);
+    })
+
+  }
+
     textE3: string='';
     numCart: number= 1;
     text: string ='des';
@@ -14,9 +32,7 @@ export class ProductComponent{
       this.textE3=text;
     }
 
-    ngOnInit(){
-      this.textElement3(this.text);
-    }
+
 
     plushNum(){
       this.numCart++;

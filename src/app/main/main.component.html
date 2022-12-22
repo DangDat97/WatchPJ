@@ -15,10 +15,10 @@
                         </ul>
                     </div>
             </li>
-            <li><a href="#">shop <span class="material-symbols-outlined">expand_more</span></a>
+            <li><a routerLink="/shop">shop <span class="material-symbols-outlined">expand_more</span></a>
                     <div class="nav-column">
                         <ul>
-                            <li *ngFor="let c of category"><a routerLink="/shop/{{c}}">{{c}}</a></li>
+                            <li *ngFor="let c of category"><a routerLink="/product-category/{{c.base}}">{{c.name}}</a></li>
                         </ul>
                     </div>
             </li>

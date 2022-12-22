@@ -2,11 +2,11 @@
     <div class="container-fuild">
         <div class="slider-product">
             <div>
-                <h1>Fastrack Analog Golden Dial Men’s Watch</h1>
+                <h1>{{product.title}}</h1>
                 <div>
                     <a href="/">Home  /</a>
                     <a href="#">Shop  /.../</a>
-                    <p>Fastrack Analog Golden Dial Men’s Watch</p>
+                    <p>{{product.title}}</p>
                 </div>
             </div>
         </div>
@@ -17,17 +17,17 @@
         <div class="element1-product">
             <div>
                 <div></div>
-                <img src="./assets/images/product-1-1.png" alt="#">
+                <img src="./assets/images/{{product.images}}" alt="#">
                 <span></span>
             </div>
             <div>
                 <div class="element1-product-text">
                     <div>
-                        <h4 class="line-through">$450.00</h4>
-                        <h4>$430.00</h4>
+                        <h4 [ngClass]="(product.sale=='')?'':'line-through'">${{product.price}}</h4>
+                        <h4 *ngIf="product.sale !=''">${{product.sale}}</h4>
                     </div>
                     <div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt laborum minima dolorem, iure architecto consequuntur. Quisquam facilis optio voluptate explicabo soluta, voluptas porro facere, consequatur, molestiae velit quis sint nostrum.</p>
+                        <p>{{product.description}}</p>
 
                     </div>
 
@@ -54,9 +54,9 @@
                         </div>
                     </div>
                     <div class="cate">
-                        <span>Category: <a href="#"><i>Jewelry</i> </a></span>
-                        <span>Tags: <a href="#"><i>Accessories, ring</i></a> </span>
-                        <span>Product ID: <a href="#"><i> 2956</i></a>  </span>
+                        <span>Category: <a href="#"><i>{{product.category}}</i> </a></span>
+                        <span>Tags: <a href="#"><i>{{product.brand}}</i></a> </span>
+                        <span>Product ID: <a href="#"><i>{{product.id}}</i></a>  </span>
                     </div>
                 </div>
             </div>
@@ -125,7 +125,14 @@
                             </div>
                             <div>
                                 <label for="rating">Your rating *</label>
-                                <span>sao</span>
+                                <div style="display:flex">
+                                  <span class="material-symbols-outlined text-warning">star</span>
+                                  <span class="material-symbols-outlined text-warning">star</span>
+                                  <span class="material-symbols-outlined text-warning">star</span>
+                                  <span class="material-symbols-outlined text-warning">star</span>
+                                  <span class="material-symbols-outlined text-warning">star</span>
+                                </div>
+
                             </div>
                             <div>
                                 <label for="Review">Review *</label>

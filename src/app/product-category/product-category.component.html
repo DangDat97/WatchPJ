@@ -42,7 +42,7 @@
               <img src="./assets/images/{{p.images}}" alt="">
             </div>
             <div class="col-9">
-              <a href="#">
+              <a routerLink="/product/{{p.id}}">
                 <h1>{{p.title}}</h1>
               </a>
               <div>
@@ -113,7 +113,7 @@
           <h1>Calendar</h1>
         </div>
         <div class="table-5">
-          <h1>Shop by Tag</h1>
+          <h1>Shop by Tag </h1>
           <div class="row">
             <a *ngFor="let b of brand" class="col">{{b}}</a>
           </div>
